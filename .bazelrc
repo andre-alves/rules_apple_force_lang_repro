@@ -1,0 +1,10 @@
+test --cache_test_results=no
+test --test_output=all
+
+build --spawn_strategy=remote,worker,local
+build --sandbox_debug
+build --compilation_mode=fastbuild
+build --define=apple.experimental.tree_artifact_outputs=1
+# build --ios_simulator_device="iPhone 8" --ios_simulator_version="16.0"
+
+# build --override_repository=build_bazel_rules_apple=/Users/andre.alves/Documents/rules_apple
