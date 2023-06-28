@@ -7,6 +7,12 @@ http_archive(
     url = "https://github.com/bazelbuild/rules_apple/releases/download/2.3.0/rules_apple.2.3.0.tar.gz",
 )
 
+# git_repository(
+#     name = "build_bazel_rules_apple",
+#     commit = "0012aed91dc20799a245df1bd494df618ade62d3",
+#     remote = "https://github.com/andre-alves/rules_apple",
+# )
+
 load(
     "@build_bazel_rules_apple//apple:repositories.bzl",
     "apple_rules_dependencies",
